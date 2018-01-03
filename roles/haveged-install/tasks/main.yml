@@ -1,0 +1,8 @@
+---
+- name: Install haveged for low entropy rejecting ssh connections
+  block:
+    - name: Install haveged package
+      package: name=haveged state=latest
+    - name: Enable haveged service
+      service: name=haveged enabled=yes
+  become: yes
