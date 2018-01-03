@@ -1,0 +1,11 @@
+---
+pkg_python2: python
+pkg_python2_dev: python-devel
+pkg_python2_pip: python-pip
+pkg_python2_setuptools: python-setuptools
+pkg_python2_virtualenv: python-virtualenv
+pkg_python3: python34
+pkg_python3_dev: python34-devel
+pkg_python3_pip: python34-pip
+pkg_python3_setuptools: python34-setuptools
+pkg_python3_virtualenv: python34-virtualenv

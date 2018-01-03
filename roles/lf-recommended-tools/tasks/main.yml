@@ -1,0 +1,26 @@
+---
+- include_vars: "{{item}}"
+  with_first_found:
+    - 'pkg-names-{{ansible_distribution}}.yaml'
+    - 'pkg-names-{{ansible_os_family}}.yaml'
+    - 'pkg-names.yaml'
+
+- name: Install LF Recommended Tools
+  package:
+    name: '{{item}}'
+    state: latest
+  with_items:
+    - ansible
+    - crudini
+    - facter
+    - git
+    - git-review
+    - graphviz
+    - jq
+    - sshpass
+    - unzip
+    - xmlstarlet
+    - '{{pkg_gnu_parallel}}'
+    - '{{pkg_perl_xml_xpath}}'
+    - '{{pkg_xz}}'
+  become: yes
