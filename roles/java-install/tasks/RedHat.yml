@@ -1,7 +1,7 @@
 ---
 - name: Install all available Java versions
   yum: name=java-*-openjdk-devel state=latest
-  become: yes
+  become: true
 
 - set_fact:
     java_path: /usr/lib/jvm/java-1.8.0-openjdk
