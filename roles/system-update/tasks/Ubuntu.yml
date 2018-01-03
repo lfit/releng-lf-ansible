@@ -5,4 +5,4 @@
       apt: update_cache=yes
     - name: Update all packages
       apt: upgrade=dist
-  become: yes
+  become: true
