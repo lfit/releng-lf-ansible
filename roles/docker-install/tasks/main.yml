@@ -18,6 +18,8 @@
 
 - name: Install Docker (Ubuntu)
   block:
+    - name: Install apt-transport-https
+      apt: name=apt-transport-https state=present
     - name: Add Docker apt-key
       apt_key:
         url: https://download.docker.com/linux/ubuntu/gpg
@@ -50,3 +52,5 @@
 - name: Enable Docker service
   service: name=docker enabled=true
   become: true
+  # Do not run this in Molecule test as systemd fails in Docker
+  when: not molecule
