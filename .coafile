@@ -8,9 +8,3 @@ ignore_length_regex = Signed-off-by,
     Co-authored-by,
     http://,
     https://
-
-[all.YAML]
-bears = YAMLLintBear
-files = **/*.yaml,**/*.yml
-document_start = True
-yamllint_config = yamllint.conf

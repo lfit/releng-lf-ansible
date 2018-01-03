@@ -6,16 +6,19 @@
 
 - name: Set Java 8 as default
   block:
-    - alternatives:
+    - name: 'Set {{java_path}} as default java'
+      alternatives:
         name: java
         link: /usr/bin/java
         path: '{{java_path}}/bin/java'
-    - alternatives:
+    - name: 'Set {{java_path}} as default javac'
+      alternatives:
         name: javac
         link: /usr/bin/javac
         path: '{{java_path}}/bin/javac'
-    - alternatives:
+    - name: 'Set {{java_path}} as default java_sdk_openjdk'
+      alternatives:
         name: java_sdk_openjdk
         link: /usr/lib/jvm/java-openjdk
         path: '{{java_path}}/bin/java'
-  become: yes
+  become: true
