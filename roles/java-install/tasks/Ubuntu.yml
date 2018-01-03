@@ -1,0 +1,21 @@
+---
+- apt_repository:
+    repo: 'ppa:openjdk-r/ppa'
+  become: yes
+
+- name: Install Java 7 SDK
+  apt:
+    name: openjdk-7-jdk
+    state: latest
+    update_cache: yes
+  become: yes
+
+- name: Install Java 8 SDK
+  apt:
+    name: openjdk-8-jdk
+    state: latest
+    update_cache: yes
+  become: yes
+
+- set_fact:
+    java_path: /usr/lib/jvm/java-1.8.0-openjdk-amd64

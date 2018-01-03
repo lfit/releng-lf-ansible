@@ -1,0 +1,17 @@
+---
+- name: Install sysstat service
+  block:
+    - name: Install sysstat package
+      package: name=sysstat state=latest
+    - name: Enable sysstat service
+      service: name=sysstat enabled=yes
+  become: yes
+
+- name: Enable sysstat in /etc/default/sysstat
+  lineinfile:
+    path: /etc/default/sysstat
+    regexp: '^ENABLED='
+    line: 'ENABLED="true"'
+    create: yes
+  when: ansible_distribution == 'Ubuntu'
+  become: yes

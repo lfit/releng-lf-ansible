@@ -1,0 +1,22 @@
+---
+- include_vars: "{{item}}"
+  with_first_found:
+    - 'pkg-names-{{ansible_distribution}}.yml'
+    - 'pkg-names-{{ansible_os_family}}.yml'
+
+- name: Install Python
+  package:
+    name: '{{item}}'
+    state: latest
+  with_items:
+    - '{{pkg_python2}}'
+    - '{{pkg_python2_dev}}'
+    - '{{pkg_python2_pip}}'
+    - '{{pkg_python2_setuptools}}'
+    - '{{pkg_python2_virtualenv}}'
+    - '{{pkg_python3}}'
+    - '{{pkg_python3_dev}}'
+    - '{{pkg_python3_pip}}'
+    - '{{pkg_python3_setuptools}}'
+    - '{{pkg_python3_virtualenv}}'
+  become: yes

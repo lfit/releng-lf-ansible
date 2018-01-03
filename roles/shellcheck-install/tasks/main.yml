@@ -1,0 +1,22 @@
+---
+- name: Install ShellCheck
+  block:
+    - name: Fetch ShellCheck
+      get_url:
+        url: 'https://storage.googleapis.com/shellcheck/shellcheck-{{shellcheck_version}}.linux.x86_64.tar.xz'
+        dest: /tmp/shellcheck.tar.xz
+        checksum: '{{shellcheck_checksum}}'
+    - name: Unpack ShellCheck
+      unarchive:
+        src: /tmp/shellcheck.tar.xz
+        dest: /tmp
+        list_files: yes
+        remote_src: yes
+    - name: Install ShellCheck to /usr/local/bin/shellcheck
+      copy:
+        src: '/tmp/shellcheck-{{shellcheck_version}}/shellcheck'
+        dest: /usr/local/bin/shellcheck
+        mode: 0755
+        owner: root
+        remote_src: yes
+      become: yes

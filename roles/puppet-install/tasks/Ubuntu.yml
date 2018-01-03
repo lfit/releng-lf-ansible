@@ -1,0 +1,26 @@
+---
+- name: Install Puppet Agent
+  block:
+    - name: Purge puppet
+      apt:
+        name: '{{item}}'
+        state: absent
+        purge: yes
+      with_items:
+        - puppet
+        - puppet-common
+    - name: Install puppetlabs-release-pc1
+      apt: deb=https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
+    - name: Install puppet-agent
+      apt: name=puppet-agent state=latest update_cache=yes
+    - name: Symlink facter
+      file:
+        src: /opt/puppetlabs/bin/facter
+        dest: /usr/bin/facter
+        state: link
+    - name: Symlink puppet
+      file:
+        src: /opt/puppetlabs/puppet/bin/facter
+        dest: /usr/bin/puppet
+        state: link
+  become: yes
