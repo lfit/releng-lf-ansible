@@ -25,4 +25,4 @@
         src: /opt/puppetlabs/puppet/bin/facter
         dest: /usr/bin/puppet
         state: link
-  become: yes
+  become: true
