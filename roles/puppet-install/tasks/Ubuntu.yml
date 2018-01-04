@@ -3,12 +3,14 @@
   block:
     - name: Purge puppet
       apt:
-        name: '{{item}}'
+        name: '{{pkg}}'
         state: absent
         purge: yes
       with_items:
         - puppet
         - puppet-common
+      loop_control:
+        loop_var: pkg
     - name: Install puppetlabs-release-pc1
       apt: deb=https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
     - name: Install puppet-agent
