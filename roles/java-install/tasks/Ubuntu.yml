@@ -17,5 +17,13 @@
     update_cache: yes
   become: yes
 
+- name: Install Java 9 SDK
+  apt:
+    name: openjdk-9-jdk
+    state: latest
+    update_cache: yes
+    dpkg_options: 'force-overwrite'
+  become: true
+
 - set_fact:
     java_path: /usr/lib/jvm/java-1.8.0-openjdk-amd64
