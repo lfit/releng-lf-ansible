@@ -3,5 +3,24 @@
   yum: name=java-*-openjdk-devel state=latest
   become: yes
 
+# We really want a released version of Java 9 but RedHat does not provide
+# official packages yet and this copr repo appears to be all that's available
+# at the moment.
+- name: Install Java 9 SDK
+  block:
+    - name: Add Java 9 SDK Copr repo
+      yum_repository:
+        name: omajid-openjdk9
+        description: Copr repo for openjdk9 owned by omajid
+        baseurl: https://copr-be.cloud.fedoraproject.org/results/omajid/openjdk9/epel-7-$basearch/
+        enabled: true
+        gpgcheck: yes
+        gpgkey: https://copr-be.cloud.fedoraproject.org/results/omajid/openjdk9/pubkey.gpg
+        repo_gpgcheck: false
+        skip_if_unavailable: true
+    - name: Install Java 9 SDK
+      yum: name=java-9-openjdk-devel state=present
+  become: true
+
 - set_fact:
     java_path: /usr/lib/jvm/java-1.8.0-openjdk
