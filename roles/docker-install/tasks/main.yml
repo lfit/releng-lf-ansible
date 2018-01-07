@@ -32,12 +32,19 @@
   become: true
 
 - name: Copy LF Docker configuration
-  copy:
-    src: daemon.json
-    dest: /etc/docker/daemon.json
-    owner: root
-    group: root
-    mode: 0644
+  block:
+    - name: Ensure /etc/docker directory exists
+      file:
+        path: /etc/docker
+        state: directory
+        mode: 0700
+    - name: Copy LF Docker configuration
+      copy:
+        src: daemon.json
+        dest: /etc/docker/daemon.json
+        owner: root
+        group: root
+      mode: 0600
   become: true
 
 - name: Enable Docker service
