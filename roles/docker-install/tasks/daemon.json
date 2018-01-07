@@ -1,0 +1,8 @@
+{
+  "bip": "10.250.0.254/24",
+  "hosts": [
+    "tcp://0.0.0.0:5555",
+    "unix:///var/run/docker.sock"
+  ],
+  "selinux-enabled": true
+}
