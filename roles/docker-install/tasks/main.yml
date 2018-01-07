@@ -31,6 +31,15 @@
   when: ansible_distribution == 'Ubuntu'
   become: true
 
+- name: Copy LF Docker configuration
+  copy:
+    src: daemon.json
+    dest: /etc/docker/daemon.json
+    owner: root
+    group: root
+    mode: 0644
+  become: true
+
 - name: Enable Docker service
   service: name=docker enabled=true
   become: true
