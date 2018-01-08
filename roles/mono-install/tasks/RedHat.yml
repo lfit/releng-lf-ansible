@@ -1,0 +1,23 @@
+---
+- name: Add Mono RPM Key
+  rpm_key:
+    key: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+    state: present
+  become: true
+
+- name: Add Mono repository
+  yum_repository:
+    name: mono-project
+    description: Mono Project CentOS repository
+    baseurl: http://download.mono-project.com/repo/centos
+    enabled: true
+    repo_gpgcheck: false
+    skip_if_unavailable: true
+  become: true
+
+- name: Install mono-complete and nuget
+  yum: 'name={{item}} state=present update_cache=true'
+  with_items:
+    - mono-complete
+    - nuget
+  become: true
