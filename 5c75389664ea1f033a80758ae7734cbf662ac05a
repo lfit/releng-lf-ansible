@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "75b52f3d_fd5e1f2d",
+        "filename": "roles/mono-install/tasks/RedHat.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-01-08T22:24:08Z",
+      "side": 1,
+      "message": "The description doesn\u0027t match the repo being added!",
+      "revId": "5c75389664ea1f033a80758ae7734cbf662ac05a",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    }
+  ]
+}
