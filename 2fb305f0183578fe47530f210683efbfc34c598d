@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e2ecca5_1d7d28c3",
+        "filename": "roles/java-install/tasks/RedHat.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-01-08T04:01:52Z",
+      "side": 1,
+      "message": "become: true",
+      "revId": "2fb305f0183578fe47530f210683efbfc34c598d",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    }
+  ]
+}
