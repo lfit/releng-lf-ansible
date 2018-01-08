@@ -16,6 +16,24 @@
       "revId": "5c75389664ea1f033a80758ae7734cbf662ac05a",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e2c18411_04ed589e",
+        "filename": "roles/mono-install/tasks/RedHat.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-01-08T22:29:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "75b52f3d_fd5e1f2d",
+      "revId": "5c75389664ea1f033a80758ae7734cbf662ac05a",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
     }
   ]
 }
