@@ -1,0 +1,10 @@
+---
+- name: Install mono-complete and nuget
+  apt:
+    name: '{{item}}'
+    state: present
+    update_cache: yes
+  with_items:
+    - mono-complete
+    - nuget
+  become: yes
