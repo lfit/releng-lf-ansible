@@ -1,0 +1,27 @@
+---
+- include_vars: "{{item}}"
+  with_first_found:
+    - 'pkg-names-{{ansible_distribution}}.yaml'
+    - 'pkg-names-{{ansible_os_family}}.yaml'
+    - 'pkg-names.yaml'
+
+- name: Install Dev libraries
+  package:
+    name: '{{item}}'
+    state: present
+  with_items:
+    - '{{pkg_boost_dev}}'
+    - '{{pkg_freetype_dev}}'
+    - '{{pkg_gtest_dev}}'
+    - '{{pkg_json_c_dev}}'
+    - '{{pkg_libcurl_dev}}'
+    - '{{pkg_libffi_dev}}'
+    - '{{pkg_libpcap_dev}}'
+    - '{{pkg_libpng_dev}}'
+    - '{{pkg_libvirt_dev}}'
+    - '{{pkg_libxml2_dev}}'
+    - '{{pkg_libxslt_dev}}'
+    - '{{pkg_openssl_dev}}'
+    - '{{pkg_readline_dev}}'
+    - '{{pkg_unixodbc_dev}}'
+  become: true

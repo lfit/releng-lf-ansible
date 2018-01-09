@@ -1,0 +1,15 @@
+---
+pkg_boost_dev: libboost-dev
+pkg_freetype_dev: libfreetype6-dev
+pkg_gtest_dev: libgtest-dev
+pkg_json_c_dev: libjson-c-dev
+pkg_libcurl_dev: libcurl-dev
+pkg_libffi_dev: libffi-dev
+pkg_libpcap_dev: libpcap-dev
+pkg_libpng_dev: libpng-dev
+pkg_libvirt_dev: libvirt-dev
+pkg_libxml2_dev: libxml2-dev
+pkg_libxslt_dev: libxslt-dev
+pkg_openssl_dev: libssl-dev
+pkg_readline_dev: libreadline-dev
+pkg_unixodbc_dev: unixodbc-dev
