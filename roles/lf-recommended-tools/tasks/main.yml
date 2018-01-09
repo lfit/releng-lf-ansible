@@ -18,7 +18,9 @@
     - git-review
     - graphviz
     - jq
+    - nc
     - sshpass
+    - sshuttle
     - unzip
     - xmlstarlet
     - '{{pkg_gnu_parallel}}'
