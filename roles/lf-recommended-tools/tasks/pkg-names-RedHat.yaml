@@ -1,5 +1,6 @@
 ---
 pkg_gnu_parallel: http://ftp.riken.jp/Linux/cern/centos/7/cern/x86_64/Packages/parallel-20150522-1.el7.cern.noarch.rpm
+pkg_netcat: nc
 pkg_perl_digest_sha: perl-Digest-SHA
 pkg_perl_extutils_makemaker: perl-ExtUtils-MakeMaker
 pkg_perl_xml_xpath: perl-XML-XPath

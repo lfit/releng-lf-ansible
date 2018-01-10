@@ -18,12 +18,12 @@
     - git-review
     - graphviz
     - jq
-    - nc
     - sshpass
     - sshuttle
     - unzip
     - xmlstarlet
     - '{{pkg_gnu_parallel}}'
+    - '{{pkg_netcat}}'
     - '{{pkg_perl_digest_sha}}'
     - '{{pkg_perl_extutils_makemaker}}'
     - '{{pkg_perl_xml_xpath}}'

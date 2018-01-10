@@ -1,5 +1,6 @@
 ---
 pkg_gnu_parallel: parallel
+pkg_netcat: netcat
 pkg_perl_digest_sha: libdigest-sha-perl
 pkg_perl_extutils_makemaker: libextutils-makemaker-cpanfile-perl
 pkg_perl_xml_xpath: libxml-xpath-perl
