@@ -1,5 +1,6 @@
 ---
-- include_vars: "{{item}}"
+- name: Include distro specific variables
+  include_vars: "{{item}}"
   with_first_found:
     - 'pkg-names-{{ansible_distribution}}.yml'
     - 'pkg-names-{{ansible_os_family}}.yml'
@@ -7,7 +8,7 @@
 - name: Install Python
   package:
     name: '{{item}}'
-    state: latest
+    state: present
   with_items:
     - '{{pkg_python2}}'
     - '{{pkg_python2_dev}}'
@@ -19,4 +20,27 @@
     - '{{pkg_python3_pip}}'
     - '{{pkg_python3_setuptools}}'
     - '{{pkg_python3_virtualenv}}'
-  become: yes
+  become: true
+
+- name: Install Python via pyenv
+  environment:
+    PYENV_ROOT: /opt/pyenv
+    PATH: '/opt/pyenv/bin:{{ansible_env.PATH}}'
+    PYTHON34_VERSION: '{{python34_version}}'
+    PYTHON35_VERSION: '{{python35_version}}'
+    PYTHON36_VERSION: '{{python36_version}}'
+  block:
+    - name: 'Install pyenv {{pyenv_version}}'
+      git:
+        repo: https://github.com/pyenv/pyenv.git
+        dest: /opt/pyenv
+        version: '{{pyenv_version}}'
+    - name: 'Install Python {{python34_version}}'
+      command: pyenv install -s "$PYTHON34_VERSION"
+    - name: 'Install Python {{python35_version}}'
+      command: pyenv install -s "$PYTHON35_VERSION"
+    - name: 'Install Python {{python36_version}}'
+      command: pyenv install -s "$PYTHON36_VERSION"
+    - name: Set pyenv global
+      command: pyenv global system "$PYTHON36_VERSION" "$PYTHON35_VERSION" "$PYTHON34_VERSION"
+  become: true
