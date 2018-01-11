@@ -1,0 +1,39 @@
+---
+- name: Prepare
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Install Fedora EPEL repo
+      yum:
+        name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+        state: present
+      when: ansible_os_family == 'RedHat'
+      become: true
+
+    - name: Install Git
+      package: name=git state=present
+
+    - name: Install Python compile dependencies
+      yum:
+        name: '{{item}}'
+        state: present
+      with_items:
+        - bzip2-devel
+        - gcc
+        - make
+        - openssl-devel
+      when: ansible_os_family == 'RedHat'
+      become: true
+
+    - name: Install Python compile dependencies
+      apt:
+        name: '{{item}}'
+        state: present
+      with_items:
+        - libbz2-dev
+        - gcc
+        - make
+        - libssl-dev
+        - wget
+      when: ansible_distribution == 'Ubuntu'
+      become: true
