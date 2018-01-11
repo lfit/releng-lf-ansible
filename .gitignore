@@ -1,1 +1,3 @@
+.molecule/
 .tox/
+*.pyc
