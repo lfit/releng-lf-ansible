@@ -1,0 +1,44 @@
+---
+- name: Prepare
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Install Fedora EPEL repo
+      yum:
+        name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+        state: present
+      when: ansible_os_family == 'RedHat'
+      become: true
+
+    - name: Install Git
+      package: name=git state=present
+
+    - name: Install Protobuf compile dependencies
+      yum:
+        name: '{{item}}'
+        state: present
+      with_items:
+        - autoconf
+        - automake
+        - curl
+        - gcc-c++
+        - libtool
+        - make
+        - unzip
+      when: ansible_os_family == 'RedHat'
+      become: true
+
+    - name: Install Protobuf compile dependencies
+      apt:
+        name: '{{item}}'
+        state: present
+      with_items:
+        - autoconf
+        - automake
+        - curl
+        - g++
+        - libtool
+        - make
+        - unzip
+      when: ansible_distribution == 'Ubuntu'
+      become: true
