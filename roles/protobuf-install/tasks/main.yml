@@ -1,0 +1,38 @@
+---
+- name: Install Google Protobuf
+  block:
+    - name: 'Install protobuf {{protobuf_version}}'
+      git:
+        repo: https://github.com/google/protobuf.git
+        dest: /tmp/protobuf
+        version: '{{protobuf_version}}'
+    - name: Run ./autogen.sh
+      command: ./autogen.sh
+      args:
+        chdir: /tmp/protobuf
+    - name: Run ./configure
+      command: ./configure
+      args:
+        chdir: /tmp/protobuf
+    - name: Run make
+      command: make
+      args:
+        chdir: /tmp/protobuf
+    - name: Run make check
+      command: make check
+      args:
+        chdir: /tmp/protobuf
+    - name: Run make install
+      command: make
+      args:
+        chdir: /tmp/protobuf
+      become: true
+    - name: Run ldconfig
+      command: ldconfig
+      args:
+        chdir: /tmp/protobuf
+      become: true
+    - name: Cleanup /tmp/protobuf
+      file:
+        path: /tmp/protobuf
+        state: absent
