@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "14123567_5ea4801c",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-02-07T16:22:09Z",
+      "side": 1,
+      "message": "Do names in blocks have to be unique? If not, they why is this explicitly calling out that it\u0027s Ubuntu?\n\nI would prefer that is just be \u0027Set the frequency to 1 min\u0027",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "005eda9a_b10b7b0f",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-02-07T16:22:09Z",
+      "side": 1,
+      "message": "Do names in blocks have to be unique? If not, they why is this explicitly calling out that it\u0027s Ubuntu?\n\nI would prefer that this just be \u0027Restart sysstat service\u0027 though frankly I don\u0027t believe we need this in our image provisioning!",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b017bad8_9b970013",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 3
@@ -13,6 +47,74 @@
       "writtenOn": "2018-02-07T06:36:58Z",
       "side": 1,
       "message": "What\u0027s this blank rescue?",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e44a7690_8357c145",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-02-07T16:22:09Z",
+      "side": 1,
+      "message": "Echoing Than\u0027s statement later, I think this should probably be \"ansible_os_family \u003d\u003d \u0027Debian\u0027\" this will allow us to support any Debian flavor and not just Ubuntu.",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b20f333_cfbf9fd8",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-02-07T16:22:09Z",
+      "side": 1,
+      "message": "Do names in blocks have to be unique? If not, they why is this explicitly calling out that it\u0027s Ubuntu especially when it\u0027s for RHEL systems?\n\nI would prefer that is just be \u0027Set the frequency to 1 min\u0027",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "13ff3bc6_66996020",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-02-07T16:22:09Z",
+      "side": 1,
+      "message": "Do names in blocks have to be unique? If not, they why is this explicitly calling out that it\u0027s Ubuntu especially when it\u0027s for RHEL systems?\n\nI would prefer that this just be \u0027Restart sysstat service\u0027 though frankly I don\u0027t believe we need this in our image provisioning!",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dd8d291b_d547b5a9",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-02-07T16:22:09Z",
+      "side": 1,
+      "message": "Echoing @Than\u0027s earlier statement, what\u0027s with the blank rescue?",
       "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
