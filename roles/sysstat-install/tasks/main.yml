@@ -2,16 +2,44 @@
 - name: Install sysstat service
   block:
     - name: Install sysstat package
-      package: name=sysstat state=latest
+      package: name=sysstat state=present
     - name: Enable sysstat service
       service: name=sysstat enabled=yes
-  become: yes
+  become: true
 
 - name: Enable sysstat in /etc/default/sysstat
   lineinfile:
     path: /etc/default/sysstat
     regexp: '^ENABLED='
     line: 'ENABLED="true"'
-    create: yes
+    create: true
   when: ansible_distribution == 'Ubuntu'
-  become: yes
+  become: true
+
+- name: Change data collection frequency on Ubuntu
+  block:
+    - name: Set the frequency to 1 min on Ubuntu
+      lineinfile:
+        path: /etc/cron.d/sysstat
+        regexp: ‘debian-sa1 1 1’
+        line: “*/1 * * * * root command -v debian-sa1 > /dev/null && debian-sa1 1 1”
+        backup: true
+    - name: Restart sysstat service on Ubuntu
+      service: name=sysstat state=restarted
+      rescue:
+  when: ansible_distribution == 'Ubuntu'
+  become: true
+
+- name: Change data collection frequency on CentOS
+  block:
+    - name: Set the frequency to 1 min on Ubuntu
+      lineinfile:
+        path: /etc/cron.d/sysstat
+        regexp: ‘root /usr/lib64/sa/sa1 1 1’
+        line: “*/1 * * * * root /usr/lib64/sa/sa1 1 1”
+        backup: true
+    - name: Restart sysstat service on CentOS
+      service: name=sysstat state=restarted
+      rescue:
+  when: ansible_distribution == 'CentOS'
+  become: true
