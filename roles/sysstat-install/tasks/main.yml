@@ -2,16 +2,32 @@
 - name: Install sysstat service
   block:
     - name: Install sysstat package
-      package: name=sysstat state=latest
+      package:
+        name: sysstat
+        state: present
     - name: Enable sysstat service
-      service: name=sysstat enabled=yes
-  become: yes
+      service:
+        name: sysstat
+        enabled: true
+  become: true
 
-- name: Enable sysstat in /etc/default/sysstat
+- name: Enable sysstat
   lineinfile:
     path: /etc/default/sysstat
     regexp: '^ENABLED='
     line: 'ENABLED="true"'
-    create: yes
-  when: ansible_distribution == 'Ubuntu'
-  become: yes
+    create: true
+  when: ansible_os_family == 'Debian'
+  become: true
+
+- name: Copy sysstat configuration
+  block:
+    - name: Set frequency to 1 minute
+      copy:
+        src: '../files/sysstat-{{ansible_os_family}}'
+        dest: /etc/cron.d/sysstat
+        owner: root
+        group: root
+        mode: 0644
+        backup: yes
+  become: true
