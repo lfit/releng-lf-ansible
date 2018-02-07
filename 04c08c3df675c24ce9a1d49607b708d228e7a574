@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "b017bad8_9b970013",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-07T06:36:58Z",
+      "side": 1,
+      "message": "What\u0027s this blank rescue?",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "664b810d_66b4644c",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 3
