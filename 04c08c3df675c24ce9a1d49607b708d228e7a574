@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7686b371_614737ef",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-08T00:50:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "14123567_5ea4801c",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "005eda9a_b10b7b0f",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2018-02-07T16:22:09Z",
       "side": 1,
       "message": "Do names in blocks have to be unique? If not, they why is this explicitly calling out that it\u0027s Ubuntu?\n\nI would prefer that this just be \u0027Restart sysstat service\u0027 though frankly I don\u0027t believe we need this in our image provisioning!",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d4895323_941729c6",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-08T00:50:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "005eda9a_b10b7b0f",
       "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "c6fc6b0f_dc9490af",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-08T00:50:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b017bad8_9b970013",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e44a7690_8357c145",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 3
@@ -64,6 +118,24 @@
       "writtenOn": "2018-02-07T16:22:09Z",
       "side": 1,
       "message": "Echoing Than\u0027s statement later, I think this should probably be \"ansible_os_family \u003d\u003d \u0027Debian\u0027\" this will allow us to support any Debian flavor and not just Ubuntu.",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6556fb3a_0e79c0f8",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-08T00:50:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e44a7690_8357c145",
       "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "433a2199_3c7dc4e2",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-08T00:50:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b20f333_cfbf9fd8",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "13ff3bc6_66996020",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 3
@@ -98,6 +188,24 @@
       "writtenOn": "2018-02-07T16:22:09Z",
       "side": 1,
       "message": "Do names in blocks have to be unique? If not, they why is this explicitly calling out that it\u0027s Ubuntu especially when it\u0027s for RHEL systems?\n\nI would prefer that this just be \u0027Restart sysstat service\u0027 though frankly I don\u0027t believe we need this in our image provisioning!",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "191a69f7_6e386986",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-08T00:50:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "13ff3bc6_66996020",
       "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "162b9e0e_0130df46",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-08T00:50:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dd8d291b_d547b5a9",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "664b810d_66b4644c",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 3
@@ -132,6 +258,24 @@
       "writtenOn": "2018-02-07T06:36:16Z",
       "side": 1,
       "message": "I would use ansible_os_family \u0027RedHat\u0027 here so that the same role works in both RH and CentOS",
+      "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "56d664d9_a7ca129e",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-08T00:50:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "664b810d_66b4644c",
       "revId": "04c08c3df675c24ce9a1d49607b708d228e7a574",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
