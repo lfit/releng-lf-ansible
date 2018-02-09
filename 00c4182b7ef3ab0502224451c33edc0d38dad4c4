@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8f9e3ce6_8d0ff43a",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-09T02:47:42Z",
+      "side": 1,
+      "message": "Should use ansible_os_family \u003d\u003d \u0027Debian\u0027 as noted in previous comment.\nhttps://gerrit.linuxfoundation.org/infra/#/c/8714/3/roles/sysstat-install/tasks/main.yml@44",
+      "revId": "00c4182b7ef3ab0502224451c33edc0d38dad4c4",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f63727d_c63ed848",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-09T02:47:42Z",
+      "side": 1,
+      "message": "Should us ansible_os_family \u003d\u003d \u0027RedHat\u0027 as previously suggested:\nhttps://gerrit.linuxfoundation.org/infra/#/c/8714/3/roles/sysstat-install/tasks/main.yml@44",
+      "revId": "00c4182b7ef3ab0502224451c33edc0d38dad4c4",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    }
+  ]
+}
