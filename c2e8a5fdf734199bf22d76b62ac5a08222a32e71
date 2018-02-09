@@ -1,0 +1,118 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "990f4ada_8e0a113f",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-09T03:52:22Z",
+      "side": 1,
+      "message": "We should use lineinfile to modify files instead of shell. It is essentially ansible\u0027s version of sed.\n\nhttps://docs.ansible.com/ansible/latest/lineinfile_module.html",
+      "revId": "c2e8a5fdf734199bf22d76b62ac5a08222a32e71",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "061322ad_c5a0a45a",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-09T03:52:22Z",
+      "side": 1,
+      "message": "the block already has `become: true` so we do not need to list it in the task again.",
+      "revId": "c2e8a5fdf734199bf22d76b62ac5a08222a32e71",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5439efcf_f8d10aab",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-09T03:52:22Z",
+      "side": 1,
+      "message": "I don\u0027t think this is necessary. Packer image gets installed and imaged. The service will already be \u0027restarted\u0027 when we boot an image.",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 24
+      },
+      "revId": "c2e8a5fdf734199bf22d76b62ac5a08222a32e71",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c07be88a_6f7c1461",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-09T03:52:22Z",
+      "side": 1,
+      "message": "We should use lineinfile to modify files instead of shell. It is essentially ansible\u0027s version of sed.\n\nhttps://docs.ansible.com/ansible/latest/lineinfile_module.html",
+      "revId": "c2e8a5fdf734199bf22d76b62ac5a08222a32e71",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a26f8be8_e5306c40",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-09T03:52:22Z",
+      "side": 1,
+      "message": "The block already has become: true so there is no need to describe it again in the task.",
+      "revId": "c2e8a5fdf734199bf22d76b62ac5a08222a32e71",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "67a7d7e6_e9e288c7",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-09T03:52:22Z",
+      "side": 1,
+      "message": "I don\u0027t think this is necessary. Packer image gets installed and imaged. The service will already be \u0027restarted\u0027 when we boot an image.",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 24
+      },
+      "revId": "c2e8a5fdf734199bf22d76b62ac5a08222a32e71",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    }
+  ]
+}
