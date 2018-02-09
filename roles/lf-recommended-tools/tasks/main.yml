@@ -13,6 +13,7 @@
     - ansible
     - ant
     - crudini
+    - deltarpm
     - facter
     - git
     - git-review

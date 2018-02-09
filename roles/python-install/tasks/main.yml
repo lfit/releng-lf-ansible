@@ -10,6 +10,9 @@
     name: '{{item}}'
     state: present
   with_items:
+    - python-crypto
+    - python-lxml
+    - python-six
     - '{{pkg_python2}}'
     - '{{pkg_python2_dev}}'
     - '{{pkg_python2_pip}}'
