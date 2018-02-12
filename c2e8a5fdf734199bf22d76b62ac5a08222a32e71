@@ -131,6 +131,30 @@
       "revId": "c2e8a5fdf734199bf22d76b62ac5a08222a32e71",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b6c4886b_d1521980",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-12T02:29:36Z",
+      "side": 1,
+      "message": "This comment has not been addressed.",
+      "parentUuid": "67a7d7e6_e9e288c7",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 24
+      },
+      "revId": "c2e8a5fdf734199bf22d76b62ac5a08222a32e71",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
     }
   ]
 }
