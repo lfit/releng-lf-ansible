@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "91606db4_e8530820",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-12T08:54:19Z",
+      "side": 1,
+      "message": "Let me know what part of the regex you dont understand, will try my best to explain?\n\nThis may also help: https://regex101.com/r/1WvMjJ/7",
+      "parentUuid": "2967ef7e_e24a29e5",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 34
+      },
+      "revId": "f9ffdfdff5b6a3dd1f704886e667528b7e3fbb43",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f3e3d263_871d3279",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 7
@@ -36,6 +60,30 @@
       "writtenOn": "2018-02-12T02:25:25Z",
       "side": 1,
       "message": "Same here.",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 37
+      },
+      "revId": "f9ffdfdff5b6a3dd1f704886e667528b7e3fbb43",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bd2b6de0_7a4b0fde",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-12T08:54:19Z",
+      "side": 1,
+      "message": "Let me know what part of the regex you dont understand, will try my best to explain?\n\nThis may also help: https://regex101.com/r/1WvMjJ/7",
+      "parentUuid": "f3e3d263_871d3279",
       "range": {
         "startLine": 40,
         "startChar": 0,
