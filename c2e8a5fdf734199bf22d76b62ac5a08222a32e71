@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5966e052_5632271b",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-12T00:07:17Z",
+      "side": 1,
+      "message": "We use python regex in ansible for replace and linebyfile blocks. the patch set version 4 already had replace block in place but match groups did not work correctly. Now its fixed to work with the updated change.",
+      "parentUuid": "990f4ada_8e0a113f",
+      "revId": "c2e8a5fdf734199bf22d76b62ac5a08222a32e71",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "061322ad_c5a0a45a",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 6
