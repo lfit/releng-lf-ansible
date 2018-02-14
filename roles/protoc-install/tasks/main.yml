@@ -1,0 +1,12 @@
+---
+- name: Install Protoc
+  block:
+    - name: Download Protoc Version 3.4.0
+      unarchive:
+        src: https://github.com/google/protobuf/releases/download/v3.4.0/protoc-3.4.0-linux-x86_64.zip
+        dest: /tmp/protoc-3.4.0
+
+    - name: Copy Protoc to /usr/local/bin
+      command: mv /tmp/protoc-3.4.0/bin/protoc /usr/local/bin/
+      become: true
+      become_user: root
