@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8f93d381_76fe5cb3",
+        "filename": "roles/protobuf-install/defaults/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-15T19:21:07Z",
+      "side": 1,
+      "message": "missing \u0027sha256:\u0027 prefix I\u0027ll fix it.",
+      "revId": "0ee8abc64d38ae27bab96e0114e40aa16b104328",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    }
+  ]
+}
