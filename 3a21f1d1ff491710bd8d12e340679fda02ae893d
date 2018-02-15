@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f3b2128e_f5886fa0",
+        "filename": "roles/protobuf-install/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-15T14:04:24Z",
+      "side": 1,
+      "message": "huh does this really work? I didn\u0027t know unarchive could download a file.",
+      "revId": "3a21f1d1ff491710bd8d12e340679fda02ae893d",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    }
+  ]
+}
