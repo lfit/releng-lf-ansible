@@ -1,38 +1,12 @@
 ---
-- name: Install Google Protobuf
+- name: Install Google Protobuf Compiler (protobuf)
   block:
     - name: 'Install protobuf {{protobuf_version}}'
-      git:
-        repo: https://github.com/google/protobuf.git
-        dest: /tmp/protobuf
-        version: '{{protobuf_version}}'
-    - name: Run ./autogen.sh
-      command: ./autogen.sh
-      args:
-        chdir: /tmp/protobuf
-    - name: Run ./configure
-      command: ./configure
-      args:
-        chdir: /tmp/protobuf
-    - name: Run make
-      command: make
-      args:
-        chdir: /tmp/protobuf
-    - name: Run make check
-      command: make check
-      args:
-        chdir: /tmp/protobuf
-    - name: Run make install
-      command: make install
-      args:
-        chdir: /tmp/protobuf
+      unarchive:
+        src: https://github.com/google/protobuf/releases/download/v{{protobuf_version}}/protobuf-{{protobuf_version}}-linux-x86_64.zip
+        dest: /tmp/protobuf-{{protobuf_version}}
+        command: sha256sum /tmp/protobuf-{{protobuf_version}}
+
+    - name: Copy Protoc to /usr/local/bin
+      command: mv /tmp/protobuf-{{protobuf_version}}/bin/protobuf /usr/local/bin/
       become: true
-    - name: Run ldconfig
-      command: ldconfig
-      args:
-        chdir: /tmp/protobuf
-      become: true
-    - name: Cleanup /tmp/protobuf
-      file:
-        path: /tmp/protobuf
-        state: absent
