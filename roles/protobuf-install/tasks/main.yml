@@ -1,38 +1,39 @@
 ---
-- name: Install Google Protobuf
-  block:
-    - name: 'Install protobuf {{protobuf_version}}'
-      git:
-        repo: https://github.com/google/protobuf.git
-        dest: /tmp/protobuf
-        version: '{{protobuf_version}}'
-    - name: Run ./autogen.sh
-      command: ./autogen.sh
-      args:
-        chdir: /tmp/protobuf
-    - name: Run ./configure
-      command: ./configure
-      args:
-        chdir: /tmp/protobuf
-    - name: Run make
-      command: make
-      args:
-        chdir: /tmp/protobuf
-    - name: Run make check
-      command: make check
-      args:
-        chdir: /tmp/protobuf
-    - name: Run make install
-      command: make install
-      args:
-        chdir: /tmp/protobuf
-      become: true
-    - name: Run ldconfig
-      command: ldconfig
-      args:
-        chdir: /tmp/protobuf
-      become: true
-    - name: Cleanup /tmp/protobuf
-      file:
-        path: /tmp/protobuf
-        state: absent
+- name: 'Download protoc binary {{protobuf_version}}'
+  get_url:
+    url: https://github.com/google/protobuf/releases/download/v{{protobuf_version}}/protoc-{{protobuf_version}}-linux-x86_64.zip
+    dest: /tmp/protobuf-{{protobuf_version}}-linux-x86_64.zip
+    checksum: '{{protoc_checksum}}'
+
+- name: Ensure protoc unpack directory exists
+  file:
+    path: /tmp/protoc
+    state: directory
+
+- name: 'Unarchive protoc {{protobuf_version}} binary'
+  unarchive:
+    src: /tmp/protobuf-{{protobuf_version}}-linux-x86_64.zip
+    dest: /tmp/protoc
+    remote_src: true
+
+- name: Copy Protoc binary to /usr/local/bin
+  copy:
+    src: /tmp/protoc/bin/protoc
+    dest: /usr/local/bin/protoc
+    mode: 0755
+    owner: root
+    remote_src: true
+  become: true
+
+- name: Copy Protoc includes to /usr/local/include
+  command: cp -r /tmp/protoc/include/google /usr/local/include
+  when: true
+  become: true
+
+- name: Set permissions on /usr/local/include/google
+  file:
+    path: /usr/local/include/google
+    mode: 0755
+    owner: root
+    recurse: true
+  become: true
