@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "720d3c30_e79d0ee5",
+        "filename": "roles/protobuf-install/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-15T13:21:21Z",
+      "side": 1,
+      "message": "Is there a way to override this variable from the playbook which is importing this role? For ODL have project which have a dependency on v3.20 to be built with mininet images.",
+      "range": {
+        "startLine": 2,
+        "startChar": 16,
+        "endLine": 2,
+        "endChar": 22
+      },
+      "revId": "6bfbe43abbbb7b67c39fa6415ba79b190baa4269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    }
+  ]
+}
