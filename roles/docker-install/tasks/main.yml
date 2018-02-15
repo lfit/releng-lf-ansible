@@ -45,6 +45,11 @@
         owner: root
         group: root
       mode: 0600
+    - name: 'Set mtu to {{mtu}}'
+      lineinfile:
+        path: /etc/docker/daemon.json
+        regexp: '  "mtu":'
+        line: '  "mtu": {{mtu}},'
   become: true
 
 - name: Enable Docker service

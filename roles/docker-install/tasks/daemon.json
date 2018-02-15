@@ -4,5 +4,6 @@
     "tcp://0.0.0.0:5555",
     "unix:///var/run/docker.sock"
   ],
+  "mtu": 1458,
   "selinux-enabled": true
 }
