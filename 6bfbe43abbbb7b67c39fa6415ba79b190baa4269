@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "038a7eec_50696b44",
+        "filename": "roles/protobuf-install/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-15T13:34:41Z",
+      "side": 1,
+      "message": "Ah just realized in the code you\u0027re specifically getting the protoc package.",
+      "parentUuid": "31fb9bb5_e3bf2ffa",
+      "range": {
+        "startLine": 2,
+        "startChar": 16,
+        "endLine": 2,
+        "endChar": 22
+      },
+      "revId": "6bfbe43abbbb7b67c39fa6415ba79b190baa4269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "327eaa6f_6e857582",
         "filename": "roles/protobuf-install/tasks/main.yml",
         "patchSetId": 1
