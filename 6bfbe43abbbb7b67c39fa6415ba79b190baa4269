@@ -46,6 +46,64 @@
       "revId": "6bfbe43abbbb7b67c39fa6415ba79b190baa4269",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "31fb9bb5_e3bf2ffa",
+        "filename": "roles/protobuf-install/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-15T13:26:00Z",
+      "side": 1,
+      "message": "Why rename the variable here? my understanding is the package itself is called protobuf and protoc is one of the components of the package.",
+      "parentUuid": "ea843c2a_aed755db",
+      "range": {
+        "startLine": 2,
+        "startChar": 16,
+        "endLine": 2,
+        "endChar": 22
+      },
+      "revId": "6bfbe43abbbb7b67c39fa6415ba79b190baa4269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "327eaa6f_6e857582",
+        "filename": "roles/protobuf-install/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-15T13:26:00Z",
+      "side": 1,
+      "message": "we should validate the checksum too. Just like in the example provided.",
+      "revId": "6bfbe43abbbb7b67c39fa6415ba79b190baa4269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e8f23045_8b7ac14d",
+        "filename": "roles/protobuf-install/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-15T13:26:00Z",
+      "side": 1,
+      "message": "no need to specify become_user that\u0027s handled already in the playbook.",
+      "revId": "6bfbe43abbbb7b67c39fa6415ba79b190baa4269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
     }
   ]
 }
