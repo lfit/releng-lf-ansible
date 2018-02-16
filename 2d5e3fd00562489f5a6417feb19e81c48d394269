@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "8e800cac_91b6df40",
+        "filename": "roles/lf-recommended-tools/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-02-16T15:29:17Z",
+      "side": 1,
+      "message": "Not only is it installed with the system-update but it\u0027s specific to RPM based distros and as such shouldn\u0027t be in a main file",
+      "parentUuid": "2b22579d_365162e7",
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "beb542c6_609cba9d",
         "filename": "roles/python-install/tasks/main.yml",
         "patchSetId": 1
@@ -30,6 +48,30 @@
       "writtenOn": "2018-02-16T15:07:27Z",
       "side": 1,
       "message": "Personally I would prefer these installed via virtualenv by the job that needs it. System level python dependencies can interfere with virtualenv dependencies so it would be nice to keep them to a minimal.\n\nIf we cannot do that install these in the local devstack packer instead. We don\u0027t want to force these dependencies to all projects.\n\nIf we were to keep this here though, these need to support BOTH ubuntu and centos but I believe both distros give different names to these packages. This is why we have all those {{pkg_python2}} style vars below.",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 16
+      },
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "69aac01c_6a7f914e",
+        "filename": "roles/python-install/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-02-16T15:29:17Z",
+      "side": 1,
+      "message": "I know that python-crypto is a compiled library and IIRC python-six is as well. That being said, this does need to be done via the OS separate portions of the role so that we can do the correct package name!",
+      "parentUuid": "beb542c6_609cba9d",
       "range": {
         "startLine": 13,
         "startChar": 0,
