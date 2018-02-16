@@ -81,6 +81,30 @@
       "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e01e81a5_9ee5108e",
+        "filename": "roles/python-install/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-16T15:42:22Z",
+      "side": 1,
+      "message": "I\u0027m fine with adding python-crypto if it\u0027s done in a way that supports both our supported Distro flavors.\n\npython-six is not compiled so we don\u0027t need it added here.",
+      "parentUuid": "69aac01c_6a7f914e",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 16
+      },
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
     }
   ]
 }
