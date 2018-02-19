@@ -37,6 +37,42 @@
     },
     {
       "key": {
+        "uuid": "641c2dc9_3e2770f8",
+        "filename": "roles/lf-recommended-tools/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T08:28:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8e800cac_91b6df40",
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "84d35a52_5c3e7c1c",
+        "filename": "roles/lf-recommended-tools/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T08:28:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2b22579d_365162e7",
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "beb542c6_609cba9d",
         "filename": "roles/python-install/tasks/main.yml",
         "patchSetId": 1
@@ -96,6 +132,54 @@
       "side": 1,
       "message": "I\u0027m fine with adding python-crypto if it\u0027s done in a way that supports both our supported Distro flavors.\n\npython-six is not compiled so we don\u0027t need it added here.",
       "parentUuid": "69aac01c_6a7f914e",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 16
+      },
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab1ac64_dc8cccbb",
+        "filename": "roles/python-install/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T08:28:33Z",
+      "side": 1,
+      "message": "Ok, I\u0027ll remove the python-lxml and python-six if it\u0027s being managed through pip.\n\nThe reason python-crypto is added here is the name is common to both OS. Do we still need to add them to OS-specific files? \n\nMy understanding is we use OS-specific var/files only when names are different.\n\nRPM/CentOS:\nhttps://rpmfind.net/linux/rpm2html/search.php?query\u003dpython-crypto\u0026submit\u003dSearch+...\u0026system\u003dcentos\u0026arch\u003d\nDeb/Ubuntu:\nhttps://packages.ubuntu.com/xenial/python-crypto",
+      "parentUuid": "69aac01c_6a7f914e",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 16
+      },
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "75b6de81_ea3489e8",
+        "filename": "roles/python-install/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T08:28:33Z",
+      "side": 1,
+      "message": "Please read my query in the above ^^.",
+      "parentUuid": "e01e81a5_9ee5108e",
       "range": {
         "startLine": 13,
         "startChar": 0,
