@@ -189,6 +189,30 @@
       "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "44cc4ee5_5e546413",
+        "filename": "roles/python-install/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-19T13:26:18Z",
+      "side": 1,
+      "message": "Yes if the package name is the same it\u0027s fine. We currently support Ubuntu and CentOS 7 systems, but we do plan to add OpenSUSE in the near future too.",
+      "parentUuid": "75b6de81_ea3489e8",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 16
+      },
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
     }
   ]
 }
