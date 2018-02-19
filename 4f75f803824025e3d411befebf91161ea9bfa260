@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "dee0a021_cd88e547",
+        "filename": "roles/sysstat-install/files/sysstat-CentOS",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "53a4309d_97fb734d",
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a8ee4358_d07bafe8",
         "filename": "roles/sysstat-install/files/sysstat-CentOS",
         "patchSetId": 8
@@ -30,6 +48,24 @@
       "writtenOn": "2018-02-19T13:36:29Z",
       "side": 1,
       "message": "Unnecessary comment, you can tell it\u0027s running the tool below. Additionally a comment that doesn\u0027t match with the code causes more harm than good. Example: Code says 1 minute but comment says 10 minutes...",
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a4abe3eb_e05e1e5e",
+        "filename": "roles/sysstat-install/files/sysstat-CentOS",
+        "patchSetId": 8
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8ee4358_d07bafe8",
       "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "a091079b_06739b70",
+        "filename": "roles/sysstat-install/files/sysstat-CentOS",
+        "patchSetId": 8
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1951df2a_dfa5a0db",
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a76adad3_76e749c6",
         "filename": "roles/sysstat-install/files/sysstat-CentOS",
         "patchSetId": 8
@@ -64,6 +118,24 @@
       "writtenOn": "2018-02-19T13:36:29Z",
       "side": 1,
       "message": "I\u0027d just call this \"Generate a daily summary of process accounting\" we can look at the actual cron definition to find out when it runs. That way the comment and the code cannot get out of sync like it did above.",
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "01fee57d_b3b3f8d9",
+        "filename": "roles/sysstat-install/files/sysstat-CentOS",
+        "patchSetId": 8
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a76adad3_76e749c6",
       "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "6dc06385_94428bc6",
+        "filename": "roles/sysstat-install/files/sysstat-Ubuntu",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "18065573_2ac4940f",
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "68d763ae_4b8b8b67",
         "filename": "roles/sysstat-install/files/sysstat-Ubuntu",
         "patchSetId": 8
@@ -98,6 +188,24 @@
       "writtenOn": "2018-02-19T13:36:29Z",
       "side": 1,
       "message": "Remove this comment as it is unnecessary. A comment that doesn\u0027t match the code does more harm than good. We can tell that it runs every minute by looking at the cron definition.",
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "579307b8_cd1e437b",
+        "filename": "roles/sysstat-install/files/sysstat-Ubuntu",
+        "patchSetId": 8
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "68d763ae_4b8b8b67",
       "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "5276e73a_f0138f28",
+        "filename": "roles/sysstat-install/files/sysstat-Ubuntu",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a2993c12_fde4c6f0",
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d8eac35c_61dd824f",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 8
@@ -132,6 +258,30 @@
       "writtenOn": "2018-02-19T13:36:29Z",
       "side": 1,
       "message": "No need for a block here. If debian systems are the only system that needs to lineinifile the sysstat file then just declare it once for when {{ansible_os_family}} \u003d\u003d \u0027Debian\u0027",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 8
+      },
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0e643b55_2c7a4e29",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d8eac35c_61dd824f",
       "range": {
         "startLine": 14,
         "startChar": 0,
@@ -167,6 +317,30 @@
     },
     {
       "key": {
+        "uuid": "a8205f1f_03c08257",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9af3947f_78f27a34",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 19
+      },
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7d07e9f5_f26895f0",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 8
@@ -190,6 +364,30 @@
     },
     {
       "key": {
+        "uuid": "662f70c3_c9114d40",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7d07e9f5_f26895f0",
+      "range": {
+        "startLine": 34,
+        "startChar": 2,
+        "endLine": 34,
+        "endChar": 8
+      },
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5051be4f_11bae32b",
         "filename": "roles/sysstat-install/tasks/main.yml",
         "patchSetId": 8
@@ -201,6 +399,30 @@
       "writtenOn": "2018-02-19T13:36:29Z",
       "side": 1,
       "message": "Ansible {{ansible_os_family}} would be better here as we defined this file as supporting RedHat and Debian families. This could here as it is would blow up if run on a system that\u0027s not CentOS or Ubuntu....",
+      "range": {
+        "startLine": 37,
+        "startChar": 33,
+        "endLine": 37,
+        "endChar": 53
+      },
+      "revId": "4f75f803824025e3d411befebf91161ea9bfa260",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "64aa5365_526a8747",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-19T23:18:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5051be4f_11bae32b",
       "range": {
         "startLine": 37,
         "startChar": 33,
