@@ -237,6 +237,30 @@
       "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3c0bd41a_07f8c10c",
+        "filename": "roles/python-install/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-20T15:16:49Z",
+      "side": 1,
+      "message": "Virtualenv is not a perfect solution. As someone who used Gentoo in the past I\u0027ve been burned more than once by system packages and virtualenv conflicts.\n\nA virtualenv package may detect a local system dependency that is already satisfied and not pull in the dependency via `pip install` and then you get a situation where you have a version of a package that you were not expecting.\n\nAnother situation that can arise is a newer version of a Python package removed a module but the older system level package has that file. Python will then resolve the older system level module and your project will mistakenly believe that you have access to a module in a dependency that no longer exists.\n\nIMO best practice is to install the absolute minimal Python package you can at the OS level and let the projects requirements.txt manage their dependencies through virtualenv so that you can guarantee that OS level packages are not satisfying project dependencies.\n\nExceptions to this rule for cases where Python is providing bindings to a compiled package that needs the system level package.",
+      "parentUuid": "f3a3a160_bf1b8210",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 16
+      },
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
     }
   ]
 }
