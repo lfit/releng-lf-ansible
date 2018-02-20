@@ -213,6 +213,30 @@
       "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f3a3a160_bf1b8210",
+        "filename": "roles/python-install/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-20T01:25:55Z",
+      "side": 1,
+      "message": "I don\u0027t see a harm for these to going in here, since these system versions and should not conflict when using pip installed version with virtenv. When we source an virtualenv from pip, then the packages available in the virtenv should automatically override the system default, until you deactivate.",
+      "parentUuid": "44cc4ee5_5e546413",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 16
+      },
+      "revId": "2d5e3fd00562489f5a6417feb19e81c48d394269",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
     }
   ]
 }
