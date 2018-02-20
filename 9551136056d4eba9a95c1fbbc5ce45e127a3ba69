@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "27157620_c3f564ce",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-20T15:06:01Z",
+      "side": 1,
+      "message": "Considering how short these lines are I would keep them as single liners.",
+      "revId": "9551136056d4eba9a95c1fbbc5ce45e127a3ba69",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0f9261ea_84fdd149",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-02-20T15:06:01Z",
+      "side": 1,
+      "message": "Don\u0027t need a block here.",
+      "revId": "9551136056d4eba9a95c1fbbc5ce45e127a3ba69",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    }
+  ]
+}
