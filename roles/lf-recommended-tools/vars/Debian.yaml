@@ -1,0 +1,8 @@
+---
+lf_recommended_tools_packages_distro:
+  - parallel
+  - netcat
+  - libdigest-sha-perl
+  - libextutils-makemaker-cpanfile-perl
+  - libxml-xpath-perl
+  - xz-utils

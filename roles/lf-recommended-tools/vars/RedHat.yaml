@@ -1,0 +1,8 @@
+---
+lf_recommended_tools_packages_distro:
+  - http://ftp.riken.jp/Linux/cern/centos/7/cern/x86_64/Packages/parallel-20150522-1.el7.cern.noarch.rpm
+  - nc
+  - perl-Digest-SHA
+  - perl-ExtUtils-MakeMaker
+  - perl-XML-XPath
+  - xz
