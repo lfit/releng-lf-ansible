@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fabd9aa3_c2616341",
+        "filename": "roles/sysstat-install/tasks/main.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2018-02-22T05:26:52Z",
+      "side": 0,
+      "message": "I think it\u0027s better to keep all the code in yaml format is much better. Its also one of the recommended best practices.",
+      "revId": "0d88f8b7a24b53b1c3e189e30ab94373c51eea91",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
+    }
+  ]
+}
