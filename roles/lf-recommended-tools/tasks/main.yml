@@ -13,6 +13,7 @@
     - ansible
     - ant
     - crudini
+    - dstat
     - facter
     - git
     - git-review
