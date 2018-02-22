@@ -9,8 +9,3 @@
     name: "{{ lf_recommended_tools_packages }}"
     state: latest
   become: yes
-
-- name: Install fedora-packager
-  yum: name=fedora-packager state=present
-  when: ansible_os_family == 'RedHat'
-  become: true
